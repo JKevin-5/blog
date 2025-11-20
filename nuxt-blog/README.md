@@ -73,3 +73,16 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+# Nuxt Content + pnpm
+pnpm无法创建better-sqlite3模块所需的文件，所以需要对其进行特殊处理
+
+创建pnpm-workspace.yaml文件，内容如下：
+```yaml
+onlyBuiltDependencies:
+  - better-sqlite3
+```
+接着使用pnpm对better-sqlite3进行安装，即可正常使用
+```bash
+pnpm rebuild better-sqlite3
+```
