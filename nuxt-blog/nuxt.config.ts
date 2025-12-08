@@ -5,5 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/ui'],
   ui: {
     fonts: false
+  },
+  content: {
   }
 })
