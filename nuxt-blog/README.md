@@ -86,3 +86,26 @@ onlyBuiltDependencies:
 ```bash
 pnpm rebuild better-sqlite3
 ```
+
+# NuxtUI使用
+
+## APP
+App在layout中是用于进行最外层ui布局的配置项目，类似一个用于控制全局布局，并且可以控制tooltip和dialog的方式。
+- dialog
+- locale：i18n
+
+
+# NuxtJs
+
+## NuxtPage标签
+
+用于显示项目中`/pages`下的所有vue项目，相当于vue中的`<route-view>`标签。
+
+
+## alia
+- `~`/`@`：<src>
+- `~~`/`@@`：<root-src>
+
+# NuxtContent
+
+## ContentRenderer
