@@ -12,30 +12,32 @@
 
   const route = useRoute()
   
+  console.log(route.path,route.path.startsWith('/camera/gallery'))
+
   // 导航栏
-  const items = [
+  const items = computed(()=> [
     {
       // 相册
       label:'Camera',
       to:'/camera/gallery',
-      active: route.path.startsWith('/camera')
+      active: route.path.startsWith('/camera/gallery')
     },{
       // 项目
       label:'Project',
       to:'/project',
     },
-    {
-      // 点子
-      label:'Idea',
-      to:'/idea',
-    },{
-      // 旅游
-      label:'Travel',
-      to:'/travel'
-    },{
-      // 音乐
-      label:'Radio',
-      to:'/radio'
-    }
-  ]
+    // {
+    //   // 点子
+    //   label:'Idea',
+    //   to:'/idea',
+    // },{
+    //   // 旅游
+    //   label:'Travel',
+    //   to:'/travel'
+    // },{
+    //   // 音乐
+    //   label:'Radio',
+    //   to:'/radio'
+    // }
+  ])
 </script>

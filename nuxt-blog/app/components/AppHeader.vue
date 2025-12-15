@@ -1,5 +1,0 @@
-<template>
-  <UHeader>
-    
-  </UHeader>
-</template>
