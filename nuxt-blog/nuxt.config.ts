@@ -8,5 +8,20 @@ export default defineNuxtConfig({
     fonts: false
   },
   content: {
+  },
+  vite: {
+    optimizeDeps: {
+      include: [
+        'remark-gfm',
+        'remark-emoji',
+        'remark-mdc',
+        'remark-rehype',
+        'rehype-raw',
+        'parse5',
+        'unist-util-visit',
+        'unified',
+        'debug'
+      ]
+    }
   }
 })

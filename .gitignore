@@ -1,0 +1,6 @@
+vitepress/bak/docs/.vitepress/dist/
+vitepress/docs/.vitepress/dist/
+vitepress/node_modules/
+vitepress/docs/.vitepress/cache/
+node_modules
+vitepress-blog/docs/.vitepress/cache/
