@@ -4,3 +4,5 @@ vitepress/node_modules/
 vitepress/docs/.vitepress/cache/
 node_modules
 vitepress-blog/docs/.vitepress/cache/
+vitepress-blog/docs/.vitepress/dist/
+vitepress-blog/docs/.vitepress/.temp/

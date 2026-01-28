@@ -137,3 +137,57 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* Archive page specific styles */
+.archive-page .filters-section {
+  background: linear-gradient(135deg, var(--vp-c-bg), var(--vp-c-bg-soft));
+  border: 1px solid var(--vp-c-border);
+}
+
+/* Improve tag hover effects */
+.n-tag {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.n-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline improvements */
+.n-collapse-item {
+  border: none !important;
+  margin-bottom: 1rem;
+  border-radius: 8px !important;
+  overflow: hidden;
+  background: var(--vp-c-bg-soft);
+}
+
+.n-collapse-item .n-collapse-item__header {
+  background: var(--vp-c-bg);
+  border-bottom: 1px solid var(--vp-c-border);
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+}
+
+.n-collapse-item .n-collapse-item__content {
+  padding: 1.5rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .archive-page {
+    padding: 1rem;
+  }
+  
+  .posts-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .posts-list {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
